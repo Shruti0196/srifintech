@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srifintech</title>
+</head>
+<body>
+    <!-- <form action="plot" method="POST">
+        <label>Select a value </label>
+        <select name="chosenoption"></select>
+            <option value="RELIANCE">RELIANCE</option>
+            <option value="SBIN">SBIN</option>
+            <option value="INFY">INFY</option>
+        </select>
+        <input type="submit" value="Submit" />
+    </form> -->
+    <form action="plot" method="post">
+        {% csrf_token %}
+  <label for="chosenoption">Choose a value:</label>
+  <select name="chosenoption">
+    <option value="RELIANCE">RELIANCE</option>
+    <option value="SBIN">SBIN</option>
+    <option value="INFY">INFY</option>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
